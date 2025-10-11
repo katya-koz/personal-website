@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Portrait from "../Assets/portrait_ASCII.png";
-import PortraitBlink from "../Assets/portrait_eyes_closed.png";
+import Portrait from "../Assets/portrait_ASCII.webp";
+import PortraitBlink from "../Assets/portrait_eyes_closed.webp";
 
 const LandingImage = () => {
   const [isBlinking, setIsBlinking] = useState(false);

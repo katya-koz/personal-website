@@ -452,9 +452,7 @@ body::-webkit-scrollbar-thumb:hover,
     flex-direction: column;
   }
   #about .carousel-image-container {
-    max-width: none !important;
-    width: 200vw;
-    background-color: red;
+    max-width: 40vw !important;
   }
   #projects .indicator-button {
     padding: 0;

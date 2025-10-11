@@ -17,7 +17,7 @@ import Container from "../../Global/Components/Container/Container";
 // import portrait3 from "../Assets/portrait3.png";
 // import portrait4 from "../Assets/portrait4.png";
 // import portrait5 from "../Assets/portrait5.png";
-import portrait6 from "../Assets/portrait6.png";
+import portrait6 from "../Assets/portrait6.jpg";
 
 const images = [{ src: portrait6, type: "image" }];
 
