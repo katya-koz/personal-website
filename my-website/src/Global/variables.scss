@@ -1,0 +1,92 @@
+// // Font colors
+// $font-dark: #000000;
+// $font-medium-dark: #33302d;
+// $font-medium-color: #66615c;
+// $nav-bar-glow: #ffffff;
+// // Font sizes
+
+// $nav-bar-size: 0.8em;
+// $nav-bar-height: 5vh;
+
+// // More on Nav bar
+// $nav-bar-smaller-height: 3vh;
+
+// // General colors
+// $background: #f9efe4;
+// $accent-background: #fdfaf6;
+// $grey-background: #707070;
+
+// $gradient: linear-gradient(
+//   180deg,
+//   rgba(255, 255, 255, 1) 0%,
+//   rgba(218, 230, 232, 1) 100%
+// );
+
+// // $primary-color: #e0e1dd;
+// // $secondary-color: #34e8eb;
+// $tertiary-color: #0d1b2a;
+// $accent-color: #f5a3c3;
+
+// $tech-color-darker: #2d9419;
+// $terminal-color: #302b2b;
+
+// $border: #000000;
+//
+
+// $tag-color: $accent-color;
+
+// // This is for media queries
+// $desktop-width: 1200px;
+
+// //scroll bar
+// $track-color: #e0d7cd;
+// $thumb-color: $background;
+// $scroll-hover-color: darken($thumb-color, 2%);
+
+// /// grey
+// // $light-background: #948a84;
+// // $background: #a39990;
+// // $thumb-color: $background;
+// // $scroll-hover-color: #8b817e;
+// // $accent-color: #99d2e4;
+// $light-background: #cac1bb;
+// $background: #ada092;
+// $thumb-color: $background;
+// $scroll-hover-color: #8b817e;
+// $accent-color: #99d2e4;
+
+// new color scheme !
+
+$background-highlighted: #ffff;
+$background: #edf9ff;
+$background-shaded: #b0e5ff;
+
+$terminal-color: #141414;
+//fonts
+$font-dark: #2d2e2e;
+$font-medium-dark: #56c7fd;
+$font-medium-darker: #347b9c;
+$terminal-text-color: #4af626;
+
+$border-color: #56c7fd;
+$shadow: #0003;
+
+// skills
+$prominent-badge-background: #f1eeff;
+$prominent-badge-font: #c3b6ff;
+
+$badge-background: #f1eeff;
+$badge-font: #c3b6ff;
+
+$small-badge-background: #9bff7b;
+$small-badge-font: #367922;
+
+// breakpoints
+$large-desktop-width: 1900px;
+$small-desktop-width: 1400px;
+$tablet-width: 1000px;
+$mobile-width: 400px;
+
+$nav-bar-height: 5vh;
+$nav-bar-mobile-height: 8vh;
+$nav-bar-size: 0.8em;

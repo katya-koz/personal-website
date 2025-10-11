@@ -1,0 +1,54 @@
+@use "../../app" as *;
+@use "../../variables" as *;
+@use "../../Text/text.scss" as *;
+
+.pill-badge {
+  display: flex;
+  padding: 0.25em;
+  font-family: $font-semi-bold;
+  font-size: 1.5em;
+  line-height: 1;
+  color: $badge-font;
+  background-color: $badge-background;
+  box-shadow: 0 0 0 2px $badge-font;
+  text-align: center;
+  margin: 0.25em;
+
+  // @include shaded-container();
+  // @extend .container-style.dark;
+
+  &.prominent {
+    font-size: 2em;
+    margin: 0.5em;
+    box-shadow: 0 0 0 2px $prominent-badge-font; /* Shadow as border effect */
+  }
+  &.small {
+    background-color: $small-badge-background;
+    color: $small-badge-font;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .pill-badge {
+    font-size: 4vw;
+    &.prominent {
+      font-size: 7vw;
+      margin: 0.25em;
+      margin-bottom: 0.5em;
+    }
+    &.small {
+      flex-shrink: 1;
+      font-size: 2.5vw;
+    }
+  }
+}
+
+@media only screen and (min-width: ($small-desktop-width + 1)) {
+  .pill-badge {
+    font-size: 1.5vw;
+    &.small {
+      font-size: 1.1vw !important;
+    }
+  }
+}

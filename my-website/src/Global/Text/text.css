@@ -1,0 +1,137 @@
+/*For text and fonts*/
+@font-face {
+  font-family: "VT323 Regular";
+  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Regular";
+  src: local("IBMPlexMono Regular"), url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Medium";
+  src: local("IBMPlexMono Medium"), url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Semi Bold";
+  src: local("IBMPlexMono Semi Bold"), url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Bold";
+  src: local("IBMPlexMono Bold"), url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "VT323 Regular";
+  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+}
+.text {
+  color: #2d2e2e;
+  display: inline;
+  margin: 0;
+}
+
+.landing-text {
+  text-align: left;
+  color: #4af626;
+  line-height: 1em;
+  font-size: 10vw;
+  font-family: "VT323 Regular" !important;
+}
+.landing-text.caption {
+  font-size: 2vw;
+}
+
+.terminal-text {
+  color: #4af626 !important;
+  font-family: "VT323 Regular" !important;
+}
+
+.heading {
+  font-size: 2.5em;
+  font-family: "IBMPlexMono Semi Bold";
+}
+
+.paragraph {
+  font-size: 1.1em;
+  font-family: "IBMPlexMono Medium";
+}
+
+.subparagraph {
+  font-size: 0.6em;
+}
+
+.caption {
+  font-size: 1.2em;
+  font-family: "IBMPlexMono Bold";
+}
+
+.white {
+  color: white;
+}
+
+.subheading {
+  font-size: 2em;
+}
+
+.subheading-title {
+  font-family: "VT323 Regular";
+  font-weight: 700;
+  color: #56c7fd;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.date {
+  margin-left: auto;
+  font-size: 0.9em;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.icon-button {
+  font-size: 1.7em;
+  padding: 0.25em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .paragraph {
+    font-size: 3vw !important;
+  }
+  .date {
+    font-size: 2.5vw !important;
+  }
+  .subheading {
+    font-size: 7vw;
+  }
+  .caption {
+    font-size: 4vw;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  .paragraph {
+    font-size: 1vw !important;
+  }
+  .subheading {
+    font-size: 3vw;
+  }
+  .caption {
+    font-size: 1.3vw !important;
+  }
+  .date {
+    font-size: 1vw !important;
+  }
+  i {
+    font-size: 2vw;
+  }
+}/*# sourceMappingURL=text.css.map */

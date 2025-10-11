@@ -1,0 +1,180 @@
+@use "../variables" as *;
+
+/*For text and fonts*/
+
+@font-face {
+  font-family: "VT323 Regular";
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexMono Regular";
+  src: local("IBMPlexMono Regular"),
+    url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Medium";
+  src: local("IBMPlexMono Medium"),
+    url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "IBMPlexMono Semi Bold";
+  src: local("IBMPlexMono Semi Bold"),
+    url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexMono Bold";
+  src: local("IBMPlexMono Bold"),
+    url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "VT323 Regular";
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+}
+
+$font-regular: "IBMPlexMono Regular";
+$font-semi-bold: "IBMPlexMono Semi Bold";
+$font-bold: "IBMPlexMono Bold";
+$font-medium: "IBMPlexMono Medium";
+
+$font-terminal: "VT323 Regular";
+
+$title: 10vw;
+
+//============TEXT================
+.text {
+  color: $font-dark;
+  // color: $tertiary-color;
+  // padding: 0.1em;
+  display: inline;
+  margin: 0;
+  // max-width: 100%;
+  // font-family: $font-regular;
+  // white-space: nowrap;
+}
+
+.landing-text {
+  text-align: left;
+  color: $terminal-text-color;
+  line-height: 1em;
+  font-size: $title;
+  &.caption {
+    font-size: 2vw;
+  }
+
+  font-family: $font-terminal !important;
+}
+
+.terminal-text {
+  color: $terminal-text-color !important;
+  font-family: $font-terminal !important;
+}
+
+.heading {
+  font-size: 2.5em;
+  font-family: $font-semi-bold;
+  // font-weight: 600;
+}
+.paragraph {
+  font-size: 1.1em;
+  //font-weight:600;
+  font-family: $font-medium;
+}
+.subparagraph {
+  font-size: 0.6em;
+}
+.caption {
+  font-size: 1.2em;
+  font-family: $font-bold;
+  //font-weight: 600;
+}
+.white {
+  color: white;
+}
+
+.subheading {
+  font-size: 2em;
+  //font-family: $font-bold;
+  //font-weight: 700;
+}
+.subheading-title {
+  font-family: $font-terminal;
+  font-weight: 700;
+  color: $font-medium-dark;
+}
+.right {
+  // margin-right: 0;
+  // align-items: right;
+  // align-self: flex-start;
+  // margin-left:auto;
+  // align-items: flex-end;
+  text-align: right;
+  // justify-content: flex-end;
+  // margin-left: auto;
+}
+.center {
+  align-items: center;
+  //align-self: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.left {
+  // align-items: flex-start;
+  // align-self: flex-start;
+  // margin-right:auto;
+  text-align: left;
+  // justify-content: flex-start;
+}
+
+.date {
+  margin-left: auto;
+  font-size: 0.9em;
+  align-self: center;
+  // flex:1 0;
+  white-space: nowrap;
+}
+
+.icon-button {
+  font-size: 1.7em;
+  padding: 0.25em;
+}
+
+// ===== mobile text sizes
+
+@media only screen and (max-width: $tablet-width) {
+  .paragraph {
+    font-size: 3vw !important;
+  }
+  .date {
+    font-size: 2.5vw !important;
+  }
+  .subheading {
+    font-size: 7vw;
+  }
+  .caption {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: ($small-desktop-width + 1)) {
+  .paragraph {
+    font-size: 1vw !important;
+  }
+  .subheading {
+    font-size: 3vw;
+  }
+  .caption {
+    font-size: 1.3vw !important;
+  }
+  .date {
+    font-size: 1vw !important;
+  }
+  i {
+    font-size: 2vw;
+  }
+}

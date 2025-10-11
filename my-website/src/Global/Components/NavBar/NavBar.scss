@@ -1,0 +1,66 @@
+@use "../../app" as *;
+@use "../../variables" as *;
+@use "../../Text/text.scss" as *;
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: 100%;
+  top: 0;
+  height: $nav-bar-height;
+  // height:100%;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+  padding: 0 !important;
+  font-family: $font-terminal;
+}
+
+.navbar a,
+b {
+  font-size: $nav-bar-size;
+  position: sticky;
+
+  text-decoration: none;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 2.5vw;
+  padding: 0.5em;
+  font-weight: 600;
+  @include shaded-container();
+  color: $font-medium-darker;
+}
+.navbar b {
+  color: $font-medium-dark;
+  background-color: $background;
+  font-style: italic;
+  font-family: $font-regular;
+  font-size: 1vw;
+}
+
+.navbar a:hover {
+  background-image: none;
+  // background: none;
+  //@include  container();
+  cursor: url("../../Assets/bunny_pointer.png"), pointer;
+}
+
+.scroll-link.highlighted {
+  background-color: $background;
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .navbar {
+    height: $nav-bar-mobile-height;
+  }
+
+  .navbar a {
+    font-size: 4vw;
+  }
+  .navbar b {
+    //font-size: 2.5vw;
+  }
+}

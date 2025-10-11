@@ -1,0 +1,97 @@
+@use "../../Global/App.scss" as *;
+@use "../../Global/variables" as *;
+@use "../../Global/Text/text.scss" as *;
+
+/*======================CARD======================*/
+
+.card-container {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/9;
+  width: 45%;
+  height: auto;
+  position: relative;
+  cursor: url("../../Global/Assets/bunny_pointer.png"), pointer;
+  margin: 1%;
+  @include shadow();
+  overflow: hidden;
+
+  .card-title {
+    font-weight: 500;
+    padding: 0.1em;
+    text-align: center;
+    font-size: 3em;
+    overflow: hidden;
+  }
+
+  .card-overlay {
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $terminal-color;
+    background-image: url("../../Global/Assets/terminal-background.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+    .terminal-text {
+      line-height: 0.8em;
+      margin: 0;
+      flex-shrink: 1;
+    }
+    .pill-badge {
+      @include shaded-container();
+
+      flex-shrink: 1;
+    }
+  }
+  .hstack {
+    align-self: center;
+    display: flex;
+    width: 90%;
+  }
+
+  &:hover .card-overlay {
+    transform: translateY(-100%);
+  }
+}
+
+.badges {
+  container-type: inline-size;
+  container-name: badges;
+}
+@container badges (max-width: 20em) {
+  .card-overlay {
+    .pill-badge {
+      font-size: 0.7em;
+    }
+  }
+}
+@media only screen and (max-width: $tablet-width) {
+  .card-container {
+    width: 85%;
+    .card-title {
+      font-size: 1.5em;
+    }
+    .card-overlay {
+      line-height: 0.5em;
+      gap: 0.1em;
+      .hstack {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: ($small-desktop-width + 1)) {
+  .card-overlay {
+    .pill-badge {
+      font-size: 1.2em !important;
+    }
+  }
+}

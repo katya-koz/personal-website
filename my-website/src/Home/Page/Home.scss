@@ -1,0 +1,53 @@
+@use "../../Global/App.scss" as *;
+@use "../../Global/variables" as *;
+@use "../../Global/Text/text.scss" as *;
+
+.landing-image {
+  max-height: 100%;
+  margin: 0;
+  align-self: flex-end;
+  max-width: 50vw;
+  image-rendering: pixelated;
+}
+
+// .left {
+//   // align-items: flex-start;
+// }
+
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh - $nav-bar-height;
+  background-color: $terminal-color;
+  background-image: url("../../Global/Assets/terminal-background.png");
+  width: 100%;
+  // background: $gradient;
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .landing-image {
+    //max-width: 80%;
+    max-width: 90vw;
+    max-height: 65vh;
+    align-self: flex-start;
+  }
+  .typewriter.landing-text {
+    align-self: flex-start;
+    font-size: 10vh;
+    &.caption {
+      font-size: 3vh;
+    }
+    //font-size: 4em !important;
+  }
+
+  #home {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100vh - $nav-bar-mobile-height;
+  }
+}
+
+@media only screen and (max-height: $mobile-width) and (orientation: landscape) {
+}

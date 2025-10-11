@@ -1,0 +1,16 @@
+@use "../../Global/App.scss";
+
+#about {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  .carousel-image-container {
+    max-width: 20vw;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}

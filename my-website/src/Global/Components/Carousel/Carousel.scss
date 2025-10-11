@@ -1,0 +1,159 @@
+@use "../../app" as *;
+@use "../../variables" as *;
+@use "../../Text/text.scss" as *;
+
+.carousel {
+  width: 100%;
+}
+.video-container {
+  max-width: 100%;
+}
+.video-container::-webkit-media-controls {
+  display: none;
+}
+.carousel-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+}
+
+.carousel-image-container {
+  // width:95%;
+  overflow: hidden;
+  @include container();
+  padding: 0;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  margin: 0;
+  //margin-bottom: 1em;
+}
+
+.carousel-item {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.portrait {
+  aspect-ratio: 4/5;
+}
+
+.landscape {
+  aspect-ratio: 16/9;
+}
+
+.square {
+  aspect-ratio: 1;
+}
+
+.carousel-item img {
+  //aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+
+  @include container();
+}
+
+// .image-carousel-indicators {
+//   display: flex;
+//   flex-direction: row;
+//   padding: 0;
+//   // column-gap: 0;
+//   width: 100%;
+//   z-index: 99;
+//   height: 1em;
+//   align-items: stretch;
+//   // justify-content: center;
+// }
+.indicator-button {
+  margin: 0;
+  padding: 0;
+}
+.image-controller {
+  display: flex;
+  align-items: center;
+  // column-gap:
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 0 !important;
+  margin: 0;
+  gap: 0 !important;
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+.indicator {
+  display: flex;
+  width: 10%;
+  height: 0.5em;
+  background-color: $background-shaded;
+  // box-shadow: 0 0 0 2px $light-background;
+}
+
+// .carousel-button{
+//   @include retro-container-dark();
+//   display:flex;
+//   align-items: center;
+//   padding:0.25em;
+
+//   // width:2.5%;
+//   // width: 100%;
+// }
+.indicators-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25em;
+  justify-content: center;
+}
+.indicator-active {
+  @extend .indicator;
+  background-color: $border-color;
+}
+/* Tablet */
+@media only screen and (max-width: $tablet-width) {
+  .image-controller {
+    max-height: 64vh;
+    width: auto;
+  }
+}
+/* Small tablet and below */
+@media only screen and (max-width: $tablet-width) {
+  .carousel-image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-controller {
+    height: fit-content;
+    width: 100%;
+  }
+}
+
+/* Small desktop */
+@media only screen and (max-width: $small-desktop-width) {
+  // .image-controller {
+  //   height: auto;
+  //   width: 50vw;
+  // }
+}
+
+/* Large desktop and up — use MIN-WIDTH here */
+@media only screen and (min-width: (1 + $small-desktop-width)) {
+  #inner-modal {
+    .carousel-image-container {
+      height: 100% !important;
+      width: 100% !important;
+    }
+    .image-controller {
+      width: 60vw !important;
+      height: auto;
+    }
+  }
+
+  // .media-friendly {
+  //   margin-top: 1.5em;
+  //   gap: 2em !important;
+  // }
+}
