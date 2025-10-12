@@ -7,11 +7,10 @@ const Experience = () => {
   const tools = ["C#", "Unity", "Virtual Reality"];
   const tools1 = [
     "C#",
+    "ASP.NET",
     ".NET",
     "SQL",
-    "MSSQL",
     "Selenium",
-    "Excel",
     "Azure",
     "Python",
   ];
@@ -37,6 +36,11 @@ const Experience = () => {
       paragraph:
         "Optimized VR experimental programs to minimize frame drop related data loss, reducing average loss from 20% to below 1%.",
     },
+
+    {
+      paragraph:
+        "Translated preliminary research findings into an engaging scientific poster, presented at the Lassonde Undergraduate Research Conference in 2023.",
+    },
   ];
 
   const listItemsMH = [
@@ -46,7 +50,11 @@ const Experience = () => {
     },
     {
       paragraph:
-        "Developed a RESTful ASP.NET API to centralize development, scheduled tasks (Quartz.NET CRON triggers), and backend web and database operations across 6 systems. Secured via IIS and Windows Authentication",
+        "Developed a RESTful ASP.NET API to centralize development, scheduled tasks (Quartz.NET CRON triggers), and backend web and database operations across 6 systems. Secured & hosted via IIS and Windows Authentication",
+    },
+    {
+      paragraph:
+        "Conducted an analyis on historical data in SQL to assess the effectiveness of hospital technology in preventing patient falls, ultimately contributing to Cortelluucci Vaughan Hospital achieving a HIMSS Analytics Stage 7 evaluation.",
     },
     {
       paragraph:
@@ -54,11 +62,7 @@ const Experience = () => {
     },
     {
       paragraph:
-        "Conducted an analyis on historical data in SQL to assess the effectiveness of hospital technology in preventing patient falls, ultimately contributing to CVH achieving a HIMSS Analytics Stage 7 evaluation.",
-    },
-    {
-      paragraph:
-        "Created an experimental forward tracing temporal graph model with Python (Jupyter Notebook, Pandas, Pytorch) to contact trace COVID-19 infections at the hospital. Predicted with 80% accuracy whether an encounter between staff and patient resulted in transmission across a historical dataset",
+        "Created an experimental, temporal graph model with Python (Jupyter Notebook, Pandas, Pytorch) to contact trace COVID-19 infections at the hospital. Predicted with 80% accuracy whether an encounter between staff and patient resulted in transmission across a historical dataset",
     },
   ];
   return (
