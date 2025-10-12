@@ -135,6 +135,31 @@
     font-size: 2vw;
   }
 }
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .paragraph {
+    font-size: 2vw !important;
+  }
+  .subheading {
+    font-size: 4vw !important;
+  }
+  .container {
+    gap: 1vw !important;
+  }
+  .caption {
+    font-size: 2vw;
+  }
+  .list-element .list-icon {
+    font-size: 0.7vw;
+    padding: 0;
+    margin: 0.5vw;
+  }
+  .icon-button {
+    font-size: 3vw !important;
+  }
+  .pill-badge {
+    font-size: 3vw;
+  }
+}
 body {
   background: #edf9ff;
 }
@@ -315,10 +340,6 @@ body {
   border: none;
   box-shadow: none;
 }
-.tab .hstack {
-  padding: 0.5em;
-  padding-left: 1em;
-}
 
 .upper {
   top: 0;
@@ -486,7 +507,7 @@ body::-webkit-scrollbar-thumb:hover,
 }
 @media only screen and (max-width: 1400px) {
   .media-friendly {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .inner-content {
     flex-direction: column;
@@ -508,6 +529,46 @@ body::-webkit-scrollbar-thumb:hover,
   .name-and-logo {
     flex-direction: column;
     width: 40%;
+  }
+}
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .media-friendly {
+    flex-direction: row !important;
+  }
+  .inner-content {
+    flex-direction: row;
+  }
+  #about .carousel-container {
+    align-self: flex-start;
+    padding-top: 10vw;
+  }
+  #about .container.vertical.center {
+    width: 100%;
+  }
+  .panel .paragraph {
+    font-size: 1.5vw !important;
+  }
+  .panel .list-element .date {
+    font-size: 1.2vw !important;
+  }
+  .panel .name-and-logo {
+    justify-self: center;
+    align-self: flex-start;
+  }
+  .panel .name-and-logo .logo {
+    max-width: 12vw;
+  }
+  .panel .name-and-logo .caption {
+    font-size: 1.5vw !important;
+  }
+  .panel .tab .date {
+    font-size: 1.2vw !important;
+  }
+  .panel .tab .caption {
+    font-size: 2vw;
+  }
+  .panel .tab .pill-badge {
+    font-size: 1.5vw;
   }
 }
 .pill-badge {

@@ -148,6 +148,14 @@
   .caption {
     font-size: 2vw;
   }
+  .list-element .list-icon {
+    font-size: 0.7vw;
+    padding: 0;
+    margin: 0.5vw;
+  }
+  .icon-button {
+    font-size: 3vw !important;
+  }
   .pill-badge {
     font-size: 3vw;
   }

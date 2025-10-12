@@ -45,6 +45,7 @@ const Video = ({ videoSource, hasSound, isActive }) => {
         controls
         loop={true}
         muted={isMuted}
+        playsInline
       />
 
       {hasSound && (

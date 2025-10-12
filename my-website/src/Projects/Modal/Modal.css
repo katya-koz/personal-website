@@ -148,6 +148,14 @@
   .caption {
     font-size: 2vw;
   }
+  .list-element .list-icon {
+    font-size: 0.7vw;
+    padding: 0;
+    margin: 0.5vw;
+  }
+  .icon-button {
+    font-size: 3vw !important;
+  }
   .pill-badge {
     font-size: 3vw;
   }
@@ -544,7 +552,11 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 1.2vw !important;
   }
   .panel .name-and-logo {
+    justify-self: center;
     align-self: flex-start;
+  }
+  .panel .name-and-logo .logo {
+    max-width: 12vw;
   }
   .panel .name-and-logo .caption {
     font-size: 1.5vw !important;
