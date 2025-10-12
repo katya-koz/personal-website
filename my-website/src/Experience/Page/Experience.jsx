@@ -27,7 +27,7 @@ const Experience = () => {
     },
     {
       paragraph:
-        "Optimized high-fidelity 360° video playback for smooth performance on demanding VR headsets.",
+        "Optimized high fidelity 360° video and image playback for smooth performance on demanding VR headsets.",
     },
     {
       paragraph:
@@ -46,7 +46,7 @@ const Experience = () => {
     },
     {
       paragraph:
-        "Developed a stateless ASP.NET REST API to centralize development, scheduled tasks (Quartz.NET CRON triggers), and backend web and database operations across 6 systems. Secured via IIS and Windows Authentication",
+        "Developed a RESTful ASP.NET API to centralize development, scheduled tasks (Quartz.NET CRON triggers), and backend web and database operations across 6 systems. Secured via IIS and Windows Authentication",
     },
     {
       paragraph:
