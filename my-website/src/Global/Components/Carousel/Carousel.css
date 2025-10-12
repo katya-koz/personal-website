@@ -1,27 +1,33 @@
 /*For text and fonts*/
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Regular";
-  src: local("IBMPlexMono Regular"), url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+  src: local("IBMPlexMono Regular"),
+    url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Medium";
-  src: local("IBMPlexMono Medium"), url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
+  src: local("IBMPlexMono Medium"),
+    url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Semi Bold";
-  src: local("IBMPlexMono Semi Bold"), url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
+  src: local("IBMPlexMono Semi Bold"),
+    url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Bold";
-  src: local("IBMPlexMono Bold"), url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
+  src: local("IBMPlexMono Bold"),
+    url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 .text {
   color: #2d2e2e;
@@ -516,6 +522,7 @@ body::-webkit-scrollbar-thumb:hover,
 
 .video-container {
   max-width: 100%;
+  width: 100%;
 }
 
 .video-container::-webkit-media-controls {
@@ -562,7 +569,7 @@ body::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   padding: 0;
   box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
   border-radius: 0;
@@ -588,7 +595,8 @@ body::-webkit-scrollbar-thumb:hover,
   --bs-gutter-y: 0;
 }
 
-.indicator, .indicator-active {
+.indicator,
+.indicator-active {
   display: flex;
   width: 10%;
   height: 0.5em;
@@ -632,4 +640,4 @@ body::-webkit-scrollbar-thumb:hover,
     width: 60vw !important;
     height: auto;
   }
-}/*# sourceMappingURL=Carousel.css.map */
+} /*# sourceMappingURL=Carousel.css.map */
