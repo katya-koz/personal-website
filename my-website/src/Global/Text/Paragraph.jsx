@@ -8,14 +8,9 @@ const Paragraph = ({
   type = "",
   isTabbed = false,
 }) => {
-  // Function to replace **word** with <em>word</em> while preserving paragraph structure
-
-  // Use formatItalics to prepare the HTML string for dangerouslySetInnerHTML
-
   return (
     <p
       className={`text paragraph ${align} ${type}`}
-      // Directly set the formatted string as innerHTML
       dangerouslySetInnerHTML={{
         // __html: isTabbed ? `&emsp;&emsp;${children}` : children,
         __html: children,

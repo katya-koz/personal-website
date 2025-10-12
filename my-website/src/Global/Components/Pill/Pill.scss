@@ -20,7 +20,7 @@
   &.prominent {
     font-size: 2em;
     margin: 0.5em;
-    box-shadow: 0 0 0 2px $prominent-badge-font; /* Shadow as border effect */
+    box-shadow: 0 0 0 2px $prominent-badge-font;
   }
   &.small {
     background-color: $small-badge-background;

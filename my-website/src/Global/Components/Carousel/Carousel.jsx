@@ -25,64 +25,6 @@ const Carousel = ({ aspectRatio = "landscape", media }) => {
     );
   };
 
-  //   return (
-  //     <Container align="center" direction="horizontal" type="image-controller">
-  //       {media.length > 1 && (
-  //         <IconButton
-  //           icon="bi bi-caret-left-fill"
-  //           action={goToPrevSlide}
-  //           type="indicator-button"
-  //         ></IconButton>
-  //       )}
-  //       <Container align="center" direction="vertical" type="carousel">
-  //         <Container direction="horizontal" type="carousel-image-container">
-  //           {media.map((item, idx) => (
-  //             <div
-  //               key={idx}
-  //               className={`${aspectRatio} carousel-item ${
-  //                 idx === currentIndex ? "active" : ""
-  //               }`}
-  //             >
-  //               {item.type === "image" && <Image imageSource={item.src}></Image>}
-  //               {item.type === "video" && (
-  //                 <Video
-  //                   hasSound={item.hassound}
-  //                   videoSource={item.src}
-  //                   isActive={idx === currentIndex}
-  //                 ></Video>
-  //               )}
-  //               {item.type === "pdf" && <PDF PDFSource={item.src}></PDF>}
-  //             </div>
-  //           ))}
-  //         </Container>
-  //         {media.length > 1 && (
-  //           <Container
-  //             direction="horizontal"
-  //             align="center"
-  //             type="image-carousel-indicators"
-  //           >
-  //             {media.map((_, idx) => (
-  //               <span
-  //                 key={idx}
-  //                 className={`indicator ${
-  //                   idx === currentIndex ? "indicator-active" : ""
-  //                 }`}
-  //                 onClick={() => setCurrentIndex(idx)}
-  //               ></span>
-  //             ))}
-  //           </Container>
-  //         )}
-  //       </Container>
-  //       {media.length > 1 && (
-  //         <IconButton
-  //           type="indicator-button"
-  //           icon="bi bi-caret-right-fill"
-  //           action={goToNextSlide}
-  //         ></IconButton>
-  //       )}
-  //     </Container>
-  //   );
-
   return (
     <div className="carousel-container">
       <div className="image-controller">

@@ -1,27 +1,33 @@
 /*For text and fonts*/
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Regular";
-  src: local("IBMPlexMono Regular"), url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+  src: local("IBMPlexMono Regular"),
+    url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Medium";
-  src: local("IBMPlexMono Medium"), url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
+  src: local("IBMPlexMono Medium"),
+    url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Semi Bold";
-  src: local("IBMPlexMono Semi Bold"), url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
+  src: local("IBMPlexMono Semi Bold"),
+    url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Bold";
-  src: local("IBMPlexMono Bold"), url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
+  src: local("IBMPlexMono Bold"),
+    url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"),
+    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 .text {
   color: #2d2e2e;
@@ -134,4 +140,4 @@
   i {
     font-size: 2vw;
   }
-}/*# sourceMappingURL=text.css.map */
+}

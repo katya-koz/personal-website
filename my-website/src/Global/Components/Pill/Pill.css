@@ -525,7 +525,7 @@ body::-webkit-scrollbar-thumb:hover,
 .pill-badge.prominent {
   font-size: 2em;
   margin: 0.5em;
-  box-shadow: 0 0 0 2px #c3b6ff; /* Shadow as border effect */
+  box-shadow: 0 0 0 2px #c3b6ff;
 }
 .pill-badge.small {
   background-color: #9bff7b;

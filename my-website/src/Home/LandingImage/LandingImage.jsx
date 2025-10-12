@@ -10,18 +10,18 @@ const LandingImage = () => {
       setIsBlinking(true);
       setTimeout(() => {
         setIsBlinking(false);
-      }, 500); // Time for the blink, adjust as needed
+      }, 500); // blinking time
     };
 
     const randomInterval = () => {
-      const interval = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000; // Between 2 and 5 seconds
+      const interval = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000; // between 2 and 5 seconds
       setTimeout(() => {
         triggerBlink();
-        randomInterval(); // Recurse to keep blinking at random intervals
+        randomInterval();
       }, interval);
     };
 
-    randomInterval(); // Start the random blinking
+    randomInterval();
 
     return () => {
       clearTimeout(randomInterval);

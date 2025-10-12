@@ -206,7 +206,7 @@ body {
 }
 
 .border {
-  box-shadow: 0 0 0 1px #333; /* Shadow as border effect */
+  box-shadow: 0 0 0 1px #333;
   border-radius: 0;
 }
 
@@ -383,7 +383,7 @@ body {
 body::-webkit-scrollbar,
 .scrollable::-webkit-scrollbar {
   width: 1em;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -406,7 +406,7 @@ body::-webkit-scrollbar-thumb,
   border-left: 2px solid #56c7fd;
   border-top: 2px solid #56c7fd;
   border-bottom: 2px solid #56c7fd;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -417,7 +417,7 @@ body::-webkit-scrollbar-thumb:hover,
   background-image: url("./Assets/scrollbar_grabber.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -435,7 +435,7 @@ body::-webkit-scrollbar-thumb:hover,
     overflow: overlay;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
   }
   body::-webkit-scrollbar,
   .scrollable-element::-webkit-scrollbar {

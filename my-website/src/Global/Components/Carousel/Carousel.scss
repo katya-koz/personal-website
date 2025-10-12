@@ -47,7 +47,6 @@
 }
 
 .carousel-item img {
-  //aspect-ratio: 16/9;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -56,17 +55,6 @@
   @include container();
 }
 
-// .image-carousel-indicators {
-//   display: flex;
-//   flex-direction: row;
-//   padding: 0;
-//   // column-gap: 0;
-//   width: 100%;
-//   z-index: 99;
-//   height: 1em;
-//   align-items: stretch;
-//   // justify-content: center;
-// }
 .indicator-button {
   margin: 0;
   padding: 0;
@@ -89,18 +77,8 @@
   width: 10%;
   height: 0.5em;
   background-color: $background-shaded;
-  // box-shadow: 0 0 0 2px $light-background;
 }
 
-// .carousel-button{
-//   @include retro-container-dark();
-//   display:flex;
-//   align-items: center;
-//   padding:0.25em;
-
-//   // width:2.5%;
-//   // width: 100%;
-// }
 .indicators-bar {
   display: flex;
   flex-direction: row;
@@ -111,14 +89,12 @@
   @extend .indicator;
   background-color: $border-color;
 }
-/* Tablet */
 @media only screen and (max-width: $tablet-width) {
   .image-controller {
     max-height: 64vh;
     width: auto;
   }
 }
-/* Small tablet and below */
 @media only screen and (max-width: $tablet-width) {
   .carousel-image-container {
     width: 100%;
@@ -131,15 +107,6 @@
   }
 }
 
-/* Small desktop */
-@media only screen and (max-width: $small-desktop-width) {
-  // .image-controller {
-  //   height: auto;
-  //   width: 50vw;
-  // }
-}
-
-/* Large desktop and up — use MIN-WIDTH here */
 @media only screen and (min-width: (1 + $small-desktop-width)) {
   #inner-modal {
     .carousel-image-container {
@@ -151,9 +118,4 @@
       height: auto;
     }
   }
-
-  // .media-friendly {
-  //   margin-top: 1.5em;
-  //   gap: 2em !important;
-  // }
 }
