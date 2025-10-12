@@ -16,28 +16,30 @@ const languages = [
   "C",
 ];
 
-const databases = ["PostgreSQL", "MSSQL", "Firebase", "SSIS"];
+const databases = ["PostgreSQL", "MSSQL", "Firebase"];
 
 const frameworks = [
-  "React.js",
-  "Node.js",
+  "React",
+  "Node",
   ".NET",
   "ASP.NET",
-  "Angular",
-  "Java Spring Boot",
-  "Express.js",
+  "Spring Boot",
+  "Express",
 ];
 
 const tools = [
   "Docker",
+  "Nginx",
+  "Unity",
+  "FFMPEG",
   "Debian",
   "AWS",
   "Azure",
-  "FFMPEG",
-  "Unity",
-  "Nginx",
+  "Maven",
   "Gradle",
+  "SSIS",
   "IIS",
+  "Selenium",
 ];
 
 const Skills = () => {
