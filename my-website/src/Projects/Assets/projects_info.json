@@ -13,6 +13,7 @@
         { "src": "katyaflix_4.jpg", "type": "image" }
       ],
       "title": "KatyaFlix",
+      "link": "https://github.com/katya-koz/movie-library/",
       "description": "To organize my personal (legally owned) media collection, I created a system to keep track of my lists and watchtimes. Is currently hosted locally on my personal Debian server, and is accessible only on my private network. Currently, file uploads and encodings are done through a custom Bash script on the server. Am working on transferring queing logic to Node.js.",
 
       "listItems": [
@@ -59,6 +60,7 @@
       "date": 2025,
       "media": [{ "src": "sallyapi_1.jpg", "type": "image" }],
       "title": "SALLY API",
+
       "description": "Designed and created from the ground up during my co-op term at Mackenzie Health. Secure .NET backend API tool hosted via IIS, centralizing data access, user authentication, reporting, emailing, and user/profile management of over 10,000 employees across 5 services. Fills the gap between lacking third party software from previous contractors and expedites in house app developments.",
 
       "listItems": [
@@ -163,7 +165,7 @@
       "media": [{ "src": "personalwebsite_1.jpg", "type": "image" }],
       "title": "Personal Website",
       "description": "Super meta - this is the website you're on right now. I'm constantly fixing it up and adding new stuff. It's mobile friendly!",
-
+      "link": "https://github.com/katya-koz/personal-website/",
       "badges": ["REACT", "SCSSS"]
     },
 

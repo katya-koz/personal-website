@@ -544,7 +544,11 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 1.2vw !important;
   }
   .panel .name-and-logo {
+    justify-self: center;
     align-self: flex-start;
+  }
+  .panel .name-and-logo .logo {
+    max-width: 12vw;
   }
   .panel .name-and-logo .caption {
     font-size: 1.5vw !important;

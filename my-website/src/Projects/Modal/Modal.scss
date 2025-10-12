@@ -179,9 +179,7 @@ $modal-tab-height: 6vh;
   // }
 
   .hstack {
-    .button {
-      padding: 0;
-    }
+    gap: 1vw;
 
     &.right {
       padding: 0;
