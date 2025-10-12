@@ -1,33 +1,27 @@
 /*For text and fonts*/
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"),
-    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Regular";
-  src: local("IBMPlexMono Regular"),
-    url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+  src: local("IBMPlexMono Regular"), url(../Assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Medium";
-  src: local("IBMPlexMono Medium"),
-    url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
+  src: local("IBMPlexMono Medium"), url(../Assets/fonts/IBMPlexMono-Medium.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Semi Bold";
-  src: local("IBMPlexMono Semi Bold"),
-    url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
+  src: local("IBMPlexMono Semi Bold"), url(../Assets/fonts/IBMPlexMono-SemiBold.ttf) format("truetype");
 }
 @font-face {
   font-family: "IBMPlexMono Bold";
-  src: local("IBMPlexMono Bold"),
-    url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
+  src: local("IBMPlexMono Bold"), url(../Assets/fonts/IBMPlexMono-Bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "VT323 Regular";
-  src: local("VT323 Regular"),
-    url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
+  src: local("VT323 Regular"), url(../Assets/fonts/VT323-Regular.ttf) format("truetype");
 }
 .text {
   color: #2d2e2e;
@@ -212,7 +206,7 @@ body {
 }
 
 .border {
-  box-shadow: 0 0 0 1px #333; /* Shadow as border effect */
+  box-shadow: 0 0 0 1px #333;
   border-radius: 0;
 }
 
@@ -389,7 +383,7 @@ body {
 body::-webkit-scrollbar,
 .scrollable::-webkit-scrollbar {
   width: 1em;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -412,7 +406,7 @@ body::-webkit-scrollbar-thumb,
   border-left: 2px solid #56c7fd;
   border-top: 2px solid #56c7fd;
   border-bottom: 2px solid #56c7fd;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -423,7 +417,7 @@ body::-webkit-scrollbar-thumb:hover,
   background-image: url("./Assets/scrollbar_grabber.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -435,13 +429,13 @@ body::-webkit-scrollbar-thumb:hover,
   font-size: 0.4vw;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
   body,
   .scrollable {
     overflow: overlay;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
   }
   body::-webkit-scrollbar,
   .scrollable-element::-webkit-scrollbar {
@@ -490,7 +484,7 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 1.5vw;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
   .media-friendly {
     flex-direction: column !important;
   }
@@ -498,7 +492,7 @@ body::-webkit-scrollbar-thumb:hover,
     flex-direction: column;
   }
   #inner-modal .media-friendly {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .vstack {
     width: 90%;
@@ -539,7 +533,7 @@ body::-webkit-scrollbar-thumb:hover,
 
 .carousel-image-container {
   overflow: hidden;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -569,9 +563,9 @@ body::-webkit-scrollbar-thumb:hover,
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   padding: 0;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -595,8 +589,7 @@ body::-webkit-scrollbar-thumb:hover,
   --bs-gutter-y: 0;
 }
 
-.indicator,
-.indicator-active {
+.indicator, .indicator-active {
   display: flex;
   width: 10%;
   height: 0.5em;
@@ -640,4 +633,4 @@ body::-webkit-scrollbar-thumb:hover,
     width: 60vw !important;
     height: auto;
   }
-} /*# sourceMappingURL=Carousel.css.map */
+}/*# sourceMappingURL=Carousel.css.map */

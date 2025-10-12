@@ -135,6 +135,20 @@
     font-size: 2vw;
   }
 }
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .panel .paragraph {
+    font-size: 1.5vw !important;
+  }
+  .panel .name-and-logo {
+    align-self: flex-start;
+  }
+  .panel .name-and-logo .caption {
+    font-size: 2vw !important;
+  }
+  .panel .tab .caption {
+    font-size: 2vw;
+  }
+}
 body {
   background: #edf9ff;
 }
@@ -206,7 +220,7 @@ body {
 }
 
 .border {
-  box-shadow: 0 0 0 1px #333; /* Shadow as border effect */
+  box-shadow: 0 0 0 1px #333;
   border-radius: 0;
 }
 
@@ -315,10 +329,6 @@ body {
   border: none;
   box-shadow: none;
 }
-.tab .hstack {
-  padding: 0.5em;
-  padding-left: 1em;
-}
 
 .upper {
   top: 0;
@@ -383,7 +393,7 @@ body {
 body::-webkit-scrollbar,
 .scrollable::-webkit-scrollbar {
   width: 1em;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -406,7 +416,7 @@ body::-webkit-scrollbar-thumb,
   border-left: 2px solid #56c7fd;
   border-top: 2px solid #56c7fd;
   border-bottom: 2px solid #56c7fd;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -417,7 +427,7 @@ body::-webkit-scrollbar-thumb:hover,
   background-image: url("./Assets/scrollbar_grabber.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -429,13 +439,13 @@ body::-webkit-scrollbar-thumb:hover,
   font-size: 0.4vw;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
   body,
   .scrollable {
     overflow: overlay;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
   }
   body::-webkit-scrollbar,
   .scrollable-element::-webkit-scrollbar {
@@ -484,7 +494,7 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 1.5vw;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
   .media-friendly {
     flex-direction: column !important;
   }
@@ -492,7 +502,7 @@ body::-webkit-scrollbar-thumb:hover,
     flex-direction: column;
   }
   #inner-modal .media-friendly {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .vstack {
     width: 90%;
@@ -512,7 +522,7 @@ body::-webkit-scrollbar-thumb:hover,
 }
 .panel {
   background-color: #edf9ff;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -606,9 +616,6 @@ body::-webkit-scrollbar-thumb:hover,
     padding-top: 3vh;
     justify-content: flex-start;
   }
-  .hstack {
-    padding: 0.5em !important;
-  }
   .vstack {
     padding-top: 3vh;
   }
@@ -637,21 +644,40 @@ body::-webkit-scrollbar-thumb:hover,
     height: auto;
   }
 }
-@media only screen and (min-width: 1401px) {
+@media only screen and (min-width: 1401px) and (orientation: portrait) {
   #inner-modal .paragraph {
     font-size: 1vw !important;
   }
 }
-@media only screen and (max-height: 400px) and (orientation: landscape) {
-  .modal .tab {
-    display: none !important;
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .hstack .button {
+    padding: 0;
   }
-  #inner-modal {
-    gap: 1em;
-    height: 90vh;
-    padding: 2em 0.5em 2em 0.5em !important;
+  .hstack.right {
+    padding: 0;
   }
-  .modal-picture {
-    gap: 2em !important;
+  .panel.modal .vstack .paragraph {
+    font-size: 1.5vw !important;
+  }
+  .panel.modal .standout, .panel.modal .description-highlight {
+    font-size: 1.5vw !important;
+    max-width: 33vw;
+    align-self: center;
+  }
+  .panel.modal .tab {
+    height: -moz-min-content;
+    height: min-content;
+  }
+  .panel.modal .tab .caption {
+    font-size: 2vw;
+  }
+  .panel.modal .tab .pill-badge {
+    font-size: 1.5vw;
+  }
+  .panel.modal ::after {
+    display: none;
+  }
+  .carousel-container {
+    max-width: 50vw;
   }
 }/*# sourceMappingURL=Modal.css.map */

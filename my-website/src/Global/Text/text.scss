@@ -178,3 +178,22 @@ $title: 10vw;
     font-size: 2vw;
   }
 }
+
+@media only screen and (max-height: $mobile-width) and (orientation: landscape) {
+  .paragraph {
+    font-size: 2vw !important;
+  }
+  .subheading {
+    font-size: 4vw !important;
+  }
+  .container {
+    gap: 1vw !important;
+  }
+  .caption {
+    font-size: 2vw;
+  }
+
+  .pill-badge {
+    font-size: 3vw;
+  }
+}

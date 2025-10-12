@@ -219,11 +219,6 @@ body {
     border: none;
     box-shadow: none;
   }
-
-  .hstack {
-    padding: 0.5em;
-    padding-left: 1em;
-  }
 }
 .upper {
   top: 0;
@@ -412,7 +407,7 @@ body::-webkit-scrollbar-thumb:hover,
 @media only screen and (max-width: $small-desktop-width) {
   // for smaller than desktop
   .media-friendly {
-    flex-direction: column !important;
+    flex-direction: column;
     //row-gap: 0em;
   }
 
@@ -421,8 +416,7 @@ body::-webkit-scrollbar-thumb:hover,
   }
   #inner-modal {
     .media-friendly {
-      flex-direction: column !important;
-      //row-gap: 0em;
+      flex-direction: column;
     }
     // .carousel-image-container {
     //   height: 100%;
@@ -447,5 +441,51 @@ body::-webkit-scrollbar-thumb:hover,
   .name-and-logo {
     flex-direction: column;
     width: 40%;
+  }
+}
+
+@media only screen and (max-height: $mobile-width) and (orientation: landscape) {
+  .media-friendly {
+    flex-direction: row !important;
+  }
+  .inner-content {
+    flex-direction: row;
+  }
+  #about {
+    .carousel-container {
+      align-self: flex-start;
+      padding-top: 10vw;
+    }
+    .container.vertical.center {
+      width: 100%;
+    }
+  }
+
+  .panel {
+    .paragraph {
+      font-size: 1.5vw !important;
+    }
+    .list-element {
+      .date {
+        font-size: 1.2vw !important;
+      }
+    }
+    .name-and-logo {
+      align-self: flex-start;
+      .caption {
+        font-size: 1.5vw !important;
+      }
+    }
+    .tab {
+      .date {
+        font-size: 1.2vw !important;
+      }
+      .caption {
+        font-size: 2vw;
+      }
+      .pill-badge {
+        font-size: 1.5vw;
+      }
+    }
   }
 }

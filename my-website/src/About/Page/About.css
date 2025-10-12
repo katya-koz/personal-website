@@ -206,7 +206,7 @@ body {
 }
 
 .border {
-  box-shadow: 0 0 0 1px #333; /* Shadow as border effect */
+  box-shadow: 0 0 0 1px #333;
   border-radius: 0;
 }
 
@@ -315,10 +315,6 @@ body {
   border: none;
   box-shadow: none;
 }
-.tab .hstack {
-  padding: 0.5em;
-  padding-left: 1em;
-}
 
 .upper {
   top: 0;
@@ -383,7 +379,7 @@ body {
 body::-webkit-scrollbar,
 .scrollable::-webkit-scrollbar {
   width: 1em;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -406,7 +402,7 @@ body::-webkit-scrollbar-thumb,
   border-left: 2px solid #56c7fd;
   border-top: 2px solid #56c7fd;
   border-bottom: 2px solid #56c7fd;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -417,7 +413,7 @@ body::-webkit-scrollbar-thumb:hover,
   background-image: url("./Assets/scrollbar_grabber.svg");
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 0 3px #56c7fd; /* Shadow as border effect */
+  box-shadow: 0 0 0 3px #56c7fd;
   border-radius: 0;
   background-color: #edf9ff;
   border-radius: 0;
@@ -429,13 +425,13 @@ body::-webkit-scrollbar-thumb:hover,
   font-size: 0.4vw;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) and (orientation: portrait) {
   body,
   .scrollable {
     overflow: overlay;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
   }
   body::-webkit-scrollbar,
   .scrollable-element::-webkit-scrollbar {
@@ -484,7 +480,7 @@ body::-webkit-scrollbar-thumb:hover,
     font-size: 1.5vw;
   }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1400px) and (orientation: portrait) {
   .media-friendly {
     flex-direction: column !important;
   }
@@ -492,7 +488,7 @@ body::-webkit-scrollbar-thumb:hover,
     flex-direction: column;
   }
   #inner-modal .media-friendly {
-    flex-direction: column !important;
+    flex-direction: column;
   }
   .vstack {
     width: 90%;
@@ -508,6 +504,29 @@ body::-webkit-scrollbar-thumb:hover,
   .name-and-logo {
     flex-direction: column;
     width: 40%;
+  }
+}
+@media only screen and (max-height: 450px) and (orientation: landscape) {
+  .panel .paragraph {
+    font-size: 1.5vw !important;
+  }
+  .panel .list-element .date {
+    font-size: 1.2vw !important;
+  }
+  .panel .name-and-logo {
+    align-self: flex-start;
+  }
+  .panel .name-and-logo .caption {
+    font-size: 1.5vw !important;
+  }
+  .panel .tab .date {
+    font-size: 1.2vw !important;
+  }
+  .panel .tab .caption {
+    font-size: 2vw;
+  }
+  .panel .tab .pill-badge {
+    font-size: 1.5vw;
   }
 }
 #about {

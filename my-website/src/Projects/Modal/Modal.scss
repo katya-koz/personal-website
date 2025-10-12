@@ -125,7 +125,7 @@ $modal-tab-height: 6vh;
 
   .hstack {
     //padding-left: none !important;
-    padding: 0.5em !important;
+    // padding: 0.5em !important;
   }
 
   .vstack {
@@ -156,7 +156,7 @@ $modal-tab-height: 6vh;
   }
 }
 
-@media only screen and (min-width: ($small-desktop-width + 1)) {
+@media only screen and (min-width: ($small-desktop-width + 1)) and (orientation: portrait) {
   #inner-modal {
     .paragraph {
       font-size: 1vw !important;
@@ -166,20 +166,57 @@ $modal-tab-height: 6vh;
 
 @media only screen and (max-height: $mobile-width) and (orientation: landscape) {
   // for landscape on mobile :/
+  // .modal {
+  //   .text {
+  //     font-size: 1em;
+  //   }
+  //   .pill-badge {
+  //     font-size: 1em;
+  //   }
+  //   .standout {
+  //     font-size: 1em !important;
+  //   }
+  // }
 
-  .modal {
+  .hstack {
+    .button {
+      padding: 0;
+    }
+
+    &.right {
+      padding: 0;
+    }
+    // padding: 0.5em;
+    // padding-left: 1em;
+  }
+
+  .panel.modal {
+    .vstack {
+      .paragraph {
+        font-size: 1.5vw !important;
+      }
+    }
+    .standout {
+      font-size: 1.5vw !important;
+      max-width: 33vw;
+      align-self: center;
+    }
     .tab {
-      display: none !important;
+      height: min-content;
+
+      .caption {
+        font-size: 2vw;
+      }
+      .pill-badge {
+        font-size: 1.5vw;
+      }
+    }
+    ::after {
+      display: none;
     }
   }
 
-  #inner-modal {
-    gap: 1em;
-    height: $modal-height;
-    padding: 2em 0.5em 2em 0.5em !important;
-  }
-
-  .modal-picture {
-    gap: 2em !important;
+  .carousel-container {
+    max-width: 50vw;
   }
 }
