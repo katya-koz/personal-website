@@ -42,7 +42,7 @@ const Home = () => {
             style="landing-text text caption"
             handleCompletedTyping={handleComplete}
           >
-            Full Stack Software Developer
+            Full Stack Software Developer.
           </TypeWriterText>
         )}
       </div>

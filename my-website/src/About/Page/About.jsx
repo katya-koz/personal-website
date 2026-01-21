@@ -30,8 +30,8 @@ const About = () => {
           <Paragraph isTabbed={true}>
             Hey, my name is Katya and I'm a Software Engineering (Security
             Stream) student at York University. I've just completed a 12 month
-            co-op placement as a Full Stack Developer at Mackenzie Health, and
-            am in my third year.
+            co-op placement as a Software Engineering Intern at Mackenzie
+            Health, and am in my third year.
           </Paragraph>
           <br />
           <Paragraph isTabbed={true}>

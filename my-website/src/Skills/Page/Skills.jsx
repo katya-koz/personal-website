@@ -5,41 +5,48 @@ import Container from "../../Global/Components/Container/Container.jsx";
 import Subheading from "../../Global/Text/Subheading.jsx";
 
 const languages = [
-  "C#",
   "Java",
+  "C#",
+  "Python",
   "Typescript",
   "JavaScript",
+  "SQL",
+  "C",
+  "Verilog",
   "HTML",
   "SCSS/CSS",
-  "Python",
   "Bash",
-  "C",
+  "R",
 ];
 
-const databases = ["PostgreSQL", "MSSQL", "Firebase"];
+const databases = ["PostgreSQL", "MongoDB", "MSSQL(T-SQL)", "SSIS"];
 
 const frameworks = [
   "React",
   "Node",
-  ".NET",
+  "Kafka",
+  ".NET Core",
   "ASP.NET",
   "Spring Boot",
-  "Express",
+  "Express.js",
+  "Pandas",
+  "Pytorch",
+  "Unity",
 ];
 
 const tools = [
   "Docker",
   "Nginx",
-  "Unity",
-  "FFMPEG",
-  "Debian",
-  "AWS",
   "Azure",
+  "AWS (S3, CloudFront)",
+  "JUnit",
+  "Debian/Linux",
   "Maven",
   "Gradle",
-  "SSIS",
-  "IIS",
   "Selenium",
+  "IIS",
+  "Jira",
+  "Git",
 ];
 
 const Skills = () => {
@@ -51,7 +58,7 @@ const Skills = () => {
           <Pill key={index}>{skill}</Pill>
         ))}
       </Container>
-      <Subheading title={true}>Frameworks</Subheading>
+      <Subheading title={true}>Frameworks & Libraries</Subheading>
       <Container direction="horizontal" wrap="wrapped" align="center">
         {frameworks.map((skill, index) => (
           <Pill key={index}>{skill}</Pill>
@@ -64,7 +71,7 @@ const Skills = () => {
           <Pill key={index}>{skill}</Pill>
         ))}
       </Container>
-      <Subheading title={true}>Tools</Subheading>
+      <Subheading title={true}>Tools & Devops</Subheading>
       <Container direction="horizontal" wrap="wrapped" align="center">
         {" "}
         {tools.map((skill, index) => (

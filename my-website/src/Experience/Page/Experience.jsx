@@ -4,39 +4,35 @@ import InfoPanel from "../../Global/Components/InfoPanel/InfoPanel";
 import CVRLogo from "../Assets/cvr_logo.png";
 import MHLogo from "../Assets/mh.png";
 const Experience = () => {
-  const tools = ["C#", "Unity", "Virtual Reality"];
+  const tools = ["C#", "Unity", "OpenXR", "Virtual Reality"];
   const tools1 = [
     "C#",
     "ASP.NET",
-    ".NET",
+    ".NET Core",
     "SQL",
     "Selenium",
     "Azure",
     "Python",
+    "IIS",
   ];
 
   const listItemsRA = [
     {
       paragraph:
-        "Developed several virtual reality image quality assessment programs in Unity and C#, incorporating various media types (image and video) and interactive tasks.",
+        "Accelerated visual perception research by developing 4+ VR programs with OpenXR, Unity, and C#, incorporating interactive tasks.",
     },
     {
       paragraph:
-        "Maintained high data integrity by thoroughly testing and implementing safeguards against frame loss during head tracking, ensuring continuous capture of motion data.",
+        "Optimized demanding 360° image/video playback for smooth VR performance, reducing frame drop related data loss from 20% to below 1%.",
     },
     {
       paragraph:
-        "Optimized high fidelity 360° video and image playback for smooth performance on demanding VR headsets.",
+        "Implemented multi threaded systems to enable real-time logging and parallel processing of high volume head tracking data.",
     },
     {
       paragraph:
-        "Implemented multithreaded systems to enable real time logging and processing of head tracking data.",
+        "Conducted and coordinated over 80 human subject testing trials.",
     },
-    {
-      paragraph:
-        "Optimized VR experimental programs to minimize frame drop related data loss, reducing average loss from 20% to below 1%.",
-    },
-
     {
       paragraph:
         "Translated preliminary research findings into an engaging scientific poster, presented at the Lassonde Undergraduate Research Conference in 2023.",
@@ -46,23 +42,23 @@ const Experience = () => {
   const listItemsMH = [
     {
       paragraph:
-        "Built and deployed a JWT token secured web app using C#, ASP.NET, and JavaScript to automate an outdated staff badge administration workflow, reducing service ticket creation by over 25% and facilitating the management and consolidation of over 1,500 staff profiles across several vendor applications.",
+        "Deployed a centralized ASP.NET REST API featuring a thread-safe concurrent queue to process 2,000+ tasks across 6 systems; enforced Role-Based Access Control (RBAC) via Windows Authentication and IIS.",
     },
     {
       paragraph:
-        "Developed a RESTful ASP.NET API to centralize development, scheduled tasks (Quartz.NET CRON triggers), and backend web and database operations across 6 systems. Secured & hosted via IIS and Windows Authentication",
+        "Automated staff badge management via a JWT-secured C#/ASP.NET/JS web app, reducing IT service ticket volume by over 25%.",
     },
     {
       paragraph:
-        "Conducted an analyis on historical data in SQL to assess the effectiveness of hospital technology in preventing patient falls, ultimately contributing to Cortelluucci Vaughan Hospital achieving a HIMSS Analytics Stage 7 evaluation.",
+        "Scaled a mission-critical RTLS alert system to support 1,500+ staff profiles by engineering automated data archival and synchronization jobs in C# and SQL.",
     },
     {
       paragraph:
-        "Designed and implemented a relational SQL database to integrate employee data across multiple vendor platforms and support a development API.",
+        "Validated hospital safety technologies for HIMSS Stage 7 certification by leveraging SQL to analyze historical data, proving the efficacy of fall prevention systems.",
     },
     {
       paragraph:
-        "Created an experimental, temporal graph model with Python (Jupyter Notebook, Pandas, Pytorch) to contact trace COVID-19 infections at the hospital. Predicted with 80% accuracy whether an encounter between staff and patient resulted in transmission across a historical dataset",
+        "Achieved 80% transmission accuracy in tracing COVID-19 spread by developing an experimental temporal graph model in Azure ML Studio using PyTorch and Pandas.",
     },
   ];
   return (
@@ -79,7 +75,7 @@ const Experience = () => {
         logo={MHLogo}
         badges={tools1}
         list={listItemsMH}
-        title={"Full Stack Developer"}
+        title={"Software Engineering Intern"}
         date={"August 2024 - August 2025"}
         caption={"Mackenzie Health"}
       ></InfoPanel>
